@@ -6,14 +6,14 @@
 *Returns 0 otherwise
 */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-if (c==A)
-{
-	return(1)
-}
-else
-{
-	return(0)
-}
+	if (c=='A')
+	{
+		return(1);
+	}
+	else
+	{
+		return(0);
+	}
 }
