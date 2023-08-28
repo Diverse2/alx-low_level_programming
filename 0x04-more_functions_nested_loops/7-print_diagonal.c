@@ -10,7 +10,6 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-		char space = ' ';
 		int i,j;
 
 		for (i = 0; i <= n; i++)
@@ -20,7 +19,7 @@ void print_diagonal(int n)
 				if (j == i)
 					_putchar('\\');
 				else if (j < i)
-					_putchar(space);
+					_putchar(' ');
 			}	
 		_putchar('\n');
 		}
