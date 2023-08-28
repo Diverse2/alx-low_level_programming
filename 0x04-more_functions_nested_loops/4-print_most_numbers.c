@@ -8,13 +8,11 @@
 void print_most_numbers(void)
 {
 	char num;
-	char escape_char = '2' && '4';
 
 	for (num = '0'; num <= '9'; num++)
 	{
-		if (num == escape_char)
-			continue;
-	_putchar(num);
+		if (!(num == '2' || num == '4'))
+			_putchar(num);
 	}
 
 	_putchar('\n');

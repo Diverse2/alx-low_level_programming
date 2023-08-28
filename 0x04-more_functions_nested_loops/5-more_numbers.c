@@ -12,16 +12,15 @@ void more_numbers(void)
 
 	i = 0;
 	
-	while (i < 10)
+       for (i = 0; i <= 10; i++)
 	{
-		num = '0';
-		while (num <= 14)
+		for (num = 0; num <= 14; num++)
 		{
-			_putchar(num);
-			num++;
+			 if (num >= 10)
+				 _putchar('1');
+			 _putchar(num % 10 + '0');
 		}
 		_putchar('\n');
-		i++;
 	}
 }
 
